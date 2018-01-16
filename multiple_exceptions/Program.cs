@@ -32,7 +32,25 @@ namespace multiple_exceptions
                 Console.WriteLine("\n{0} {1} {2} = {3}", Num1, op, Num2, Result);
             }
 
+            catch (FormatException)
+            {
+                Console.WriteLine("The number you typed is not valid";)
+            }
 
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+
+            catch (Exception ex)
+            {
+                Console.WriteLine("Operation Error: {0} is not a valid op", ex.Message);
+            }
+
+            Console.Read();
         }
+
+
     }
 }
