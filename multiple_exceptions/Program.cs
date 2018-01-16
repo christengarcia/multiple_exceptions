@@ -51,6 +51,27 @@ namespace multiple_exceptions
             Console.Read();
         }
 
+        static double Calculator(double v1, double v2, char op)
+        {
+            double Result = 0.00;
 
+            switch (op)
+            {
+                case '+':
+                    Result = v1 + v2;
+                    break;
+                case '-':
+                    Result = v1 + v2;
+                    break;
+                case '*':
+                    Result = v1 + v2;
+                    break;
+                case '/':
+                    Result = v1 / v2;
+                    break;
+            }
+
+            return Result;
+        }
     }
 }
